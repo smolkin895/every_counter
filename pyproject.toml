@@ -11,6 +11,12 @@ python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 
+[[tool.poetry.source]]
+name = "punctuation"
+url = "https://test.pypi.org/simple/"
+default = false
+secondary = false
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
