@@ -1,4 +1,4 @@
-from src.every_counter.every_counter import count_entries
+from every_counter.every_counter import count_entries
 
 
 def every_counter_positive():
