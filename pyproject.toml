@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 matplotlib = "^3.6.2"
+sphinx = "^5.3.0"
 
 [tool.poetry.dev-dependencies]
 
