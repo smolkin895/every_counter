@@ -1,6 +1,6 @@
 from collections import Counter
 
-from every_counter.every_counter import count_entries
+from src.every_counter.every_counter import count_entries
 
 
 def test_every_counter_positive():

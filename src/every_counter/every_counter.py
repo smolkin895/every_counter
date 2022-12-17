@@ -17,6 +17,25 @@ def delete_punctuation(text:str):
 
 
 def count_entries(file_path):
+    """Count words in a text file.
+    Words are made lowercase
+    and punctuation is removed
+    before counting.
+
+    Parameters
+    ----------
+    input_file: str
+    Path to text file.
+
+    Returns
+    -------
+    collections.Counter
+    dict - like object where keys are words and values are counts.
+    Examples
+    --------
+
+    >>> count_entries('text.txt')
+    """
     if os.path.isfile(file_path):
         dirty_text = load_file(file_path)
         text_without_punctuation = delete_punctuation(dirty_text)
@@ -25,6 +44,3 @@ def count_entries(file_path):
         text_without_punctuation = delete_punctuation(file_path)
         return Counter(text_without_punctuation)
 
-# if __name__=="__main__":
-#     count = count_entries(r'C:\Users\asmolkin\AppData\Roaming\JetBrains\PyCharm2021.3\scratches\proza')
-#     plot_words(count, n=13)
